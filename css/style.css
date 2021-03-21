@@ -48,6 +48,13 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+.header__logo_mobile {
+      display: none;
+      background: url('../images/logo_m.svg') no-repeat;
+      width: 36px;
+      height: 35px;
+}
+
 .header__logo:hover {
       cursor: pointer;
 }
@@ -57,6 +64,7 @@ h1,h2,h3,h4,h5,h6 {
       align-items: center;
       
 }
+
 
 .nav__link, .nav__link_active {
       font-size: 18px;
@@ -102,6 +110,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav__link:last-child {
       margin-right: 0;
+}
+
+
+.hamburger-menu {
+      display: none;
 }
 
 
@@ -164,11 +177,180 @@ h1,h2,h3,h4,h5,h6 {
       font-size: 18px;
       line-height: 21px;
       color: #FFFFFF;
+      text-decoration: none;
 
       transition: all .1s linear ;
 }
 
 .btn:hover {
       box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
-      transform: translate3d(-3px, -2px, 0);
+      transform: translate3d(-2px, -2px, 0);
+}
+
+
+/*Media*/ 
+
+@media (max-width:768px) {
+      .nav {
+            display: none;
+      }
+
+      .header {
+            margin-bottom: 28px;
+      }
+
+      .header__logo {
+            display: none;
+      }
+
+      .header__logo_mobile {
+            display: block;
+      }
+
+      /*Burger menu*/
+      /* скрываем чекбокс */
+      .hamburger-menu {
+            display: block;
+      }
+      #menu__toggle {
+            opacity: 0;
+      }
+
+      /* стилизуем кнопку */
+      .menu__btn {
+            display: flex; /* используем flex для центрирования содержимого */
+            align-items: center;  /* центрируем содержимое кнопки */
+            position: fixed;
+            top: 51px;
+            right: 40px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 1;
+      }
+
+      /* добавляем "гамбургер" */
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #0056EC;
+      }
+      .menu__btn > span::before {
+            content: '';
+            top: -8px;
+      }
+      .menu__btn > span::after {
+            content: '';
+            top: 8px;
+      }
+
+      /* контейнер меню */
+            .menu__box {
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: 15%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            text-align: center;
+            background-color: #fff;
+            
+      }
+
+      /* элементы меню */
+      .menu__item {
+            display: block;
+            padding: 24px 24px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            text-decoration: none;
+      }
+
+      .menu__item:hover {
+            background-color: #CFD8DC;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+            visibility: visible;
+            left: 0;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+            transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+            top: 0;
+            transform: rotate(0);
+      }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+            top: 0;
+            transform: rotate(90deg);
+      }
+    #menu__toggle:checked ~ .menu__box {
+            visibility: visible;
+            left: 0;
+      }
+
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+            transition-duration: .25s;
+      }
+      .menu__box {
+            transition-duration: .25s;
+      }
+      .menu__item {
+            transition-duration: .25s;
+      }
+
+      .intro__content {
+            text-align: center;
+            padding: 74% 0 0;
+            background-size: 74%;
+            background-position: top center;
+            margin-bottom: 0;
+      }
+
+      .intro__title {
+            
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 44px;
+      }
+
+      .intro__subtitle {
+            
+            text-align: center;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 600;
+            margin-bottom: 28px;
+      }
+
+      .btn {
+            margin: 0 auto;
+            padding: 14px 25px 13px 16px;
+            font-size: 14px;
+      }
 }
