@@ -58,6 +58,7 @@ h1,h2,h3,h4,h5,h6 {
       
 }
 
+
 .nav__link, .nav__link_active {
       font-size: 18px;
       font-weight: 700;
@@ -164,6 +165,7 @@ h1,h2,h3,h4,h5,h6 {
       font-size: 18px;
       line-height: 21px;
       color: #FFFFFF;
+      text-decoration: none;
 
       transition: all .1s linear ;
 }
@@ -171,4 +173,77 @@ h1,h2,h3,h4,h5,h6 {
 .btn:hover {
       box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
       transform: translate3d(-2px, -2px, 0);
+}
+
+
+/*Media*/ 
+
+@media (max-width:768px) {
+      .nav {
+            display: none;
+      }
+
+      .header {
+            margin-bottom: 28px;
+      }
+
+      .menu-burger__header {
+            position: relative; /* задаем относительное позиционирование */
+            width: 28px; /* определяем размеры блока */
+            height: 35px;
+            display: block;
+            margin-left: 10px;
+        }
+
+        .menu-burger__header span,
+        .menu-burger__header:after,
+        .menu-burger__header:before{
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            background: #0056EC;
+            margin: 0 auto;
+        }
+        .menu-burger__header span{
+            top: 17px;
+        }
+        .menu-burger__header:after, .menu-burger__header:before{
+            content: '';
+        }
+        .menu-burger__header:after{
+            bottom: 7px;
+        }
+        .menu-burger__header:before{
+            top: 9px;
+        }
+
+      .intro__content {
+            text-align: center;
+            padding: 74% 0 0;
+            background-size: 74%;
+            background-position: top center;
+            margin-bottom: 0;
+      }
+
+      .intro__title {
+            
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 44px;
+      }
+
+      .intro__subtitle {
+            
+            text-align: center;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 600;
+            margin-bottom: 28px;
+      }
+
+      .btn {
+            margin: 0 auto;
+            padding: 14px 25px 13px 16px;
+            font-size: 14px;
+      }
 }
