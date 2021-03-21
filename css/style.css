@@ -1,0 +1,144 @@
+
+
+title {
+      font-family: 'Roboto', sans-serif;
+}
+
+body {
+      font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+     margin: 0; 
+}
+
+
+.intro__title {
+      font-family: 'PT Serif', sans-serif;
+}
+
+
+.container {
+      width: 80%;
+      margin: auto;
+}
+
+
+
+/*Header*//*Header*//*Header*/
+.header {
+      
+      margin-bottom: 173px;
+}
+
+.header__inner {
+      display: flex;
+      justify-content: space-between;
+}
+
+
+
+.header__logo {
+      padding: 40px 0;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'PT Serif', sans-serif;
+      text-decoration: none;
+      color: inherit;
+}
+
+.nav {
+      display: flex;
+      align-items: center;
+}
+
+.nav__link {
+      font-weight: 500;
+      font-size: 18px;
+      padding: 0 13px;
+      text-decoration: none;
+      color: inherit;
+}
+
+.nav__link:hover {
+      
+      text-decoration: underline #0056EC;
+      color: inherit;
+}
+
+.nav__link:last-child {
+      padding-right: 0;
+}
+
+
+
+/*Intro*/
+
+.intro {
+      margin-bottom: 200px;
+}
+
+.intro__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+/*Content*/
+
+.intro__content {
+      width: 50%;
+}
+
+.intro__title {
+      font-size: 66px;
+      font-weight: 700;
+      line-height: 1.3;
+      font-family: PT Serif;
+
+      margin-bottom: 40px;
+}
+
+.title__mark {
+      background: linear-gradient(180deg, rgba(255,255,255,1) 15%, #ECF3FF 15%)
+      
+}
+
+.intro__subtitle {
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 1.2;
+
+      margin-bottom: 40px;
+}
+
+.btn {
+      border: none;
+      padding: 18px 30px 18px 21px;
+      background-color: #0056EC;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+}
+
+
+
+/*Intro_photo*/
+
+.intro__photo {
+      display: flex;
+      width: 50%;
+      align-items: center;
+}
+
+.intro__photo_img {
+      width: 100%;
+      max-width: 770px;
+}
