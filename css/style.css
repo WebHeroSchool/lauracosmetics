@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 .header {
       width: 80%;
       margin: auto;
-      margin-bottom: 173px;
+      margin-bottom: 100px;
 }
 
 .header__inner {
@@ -97,7 +97,7 @@ h1,h2,h3,h4,h5,h6 {
 .intro {
       width: 80%;
       margin: auto;
-      margin-bottom: 200px;
+      
 }
 
 .intro__inner {
@@ -109,7 +109,9 @@ h1,h2,h3,h4,h5,h6 {
 /*Content*/
 
 .intro__content {
-      width: 50%;
+      padding: 0 63% 100% 0;
+      background: url('../images/Frame.svg') no-repeat top right;
+
 }
 
 .intro__title {
@@ -148,20 +150,11 @@ h1,h2,h3,h4,h5,h6 {
       font-size: 18px;
       line-height: 21px;
       color: #FFFFFF;
+
+      transition: all .1s linear ;
 }
 
-
-
-/*Intro_photo*/
-
-.intro__photo {
-      display: flex;
-      width: 50%;
-      align-items: center;
-      
-}
-
-.intro__photo_img {
-      width: 100%;
-      max-width: 770px;
+.btn:hover {
+      box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
+      transform: translate3d(-2px, -2px, 0);
 }
