@@ -23,13 +23,13 @@ h6 {
 .header {
   width: 80%;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 131px;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 34px 0;
 }
 
 .header__logo {
@@ -61,7 +61,7 @@ h6 {
   font-size: 18px;
   font-weight: 700;
   position: relative;
-  margin: 0 15px;
+  margin: 0 14px;
   text-decoration: none;
   color: inherit;
 }
@@ -118,7 +118,7 @@ h6 {
 
 /* Content */
 .intro__content {
-  padding: 0 63% 100% 0;
+  padding: 73px 63% 100% 0;
   background: url("../images/Frame.svg") no-repeat top right;
 }
 
