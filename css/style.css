@@ -164,6 +164,30 @@ h6 {
 }
 
 /* Media */
+@media (max-width: 1740px) {
+  .intro__content {
+    background-size: 54%;
+    padding: 6% 63% 100% 0;
+  }
+  .intro__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1430px) {
+  .intro__content {
+    background-size: 53%;
+    padding: 6% 63% 100% 0;
+  }
+}
+@media (max-width: 1325px) {
+  .intro__content {
+    background-size: 50%;
+    padding: 6% 63% 100% 0;
+  }
+  .intro__title {
+      font-size: 45px;
+}
+
 @media (max-width: 768px) {
   .nav {
     display: none;
