@@ -96,6 +96,7 @@ h6 {
 .intro__content {
   padding: 73px 63% 100% 0;
   background: url("../images/Frame.svg") no-repeat top right;
+  position: relative;
 }
 .intro__title {
   font-size: 66px;
@@ -133,6 +134,16 @@ h6 {
   box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
   transform: translate3d(-2px, -2px, 0);
 }
+.slider {
+  display: block;
+  background: url("../images/slaider.svg") no-repeat;
+  width: 32px;
+  height: 8px;
+  position: absolute;
+  bottom: 61%;
+  left: 49%;
+  z-index: 2;
+}
 @media (max-width: 1640px) {
   .header {
     margin-bottom: 80px;
@@ -164,6 +175,10 @@ h6 {
     padding: 14px 31px 13px 18px;
     font-size: 14px;
     line-height: 17px;
+  }
+  .slider {
+    bottom: 63.3%;
+    left: 48.5%;
   }
 }
 @media (max-width: 1270px) {
@@ -199,6 +214,9 @@ h6 {
   }
   .btn {
     padding: 17px 27px 15px 13px;
+  }
+  .slider {
+    bottom: 61.3%;
   }
 }
 @media (max-width: 770px) {
