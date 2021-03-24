@@ -1,11 +1,9 @@
 title {
   font-family: "Roboto", sans-serif;
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -14,44 +12,33 @@ h5,
 h6 {
   margin: 0;
 }
-
 .intro__title {
   font-family: "PT Serif", sans-serif;
 }
-
-/*  Header */
 .header {
   width: 80%;
   margin: auto;
   margin-bottom: 131px;
 }
-
 .header__inner {
   display: flex;
   justify-content: space-between;
   padding: 34px 0;
 }
-
 .header__logo {
   background: url("../images/logo.svg") no-repeat;
-
-  /* font: 700 24px/31px 'PT Serif', sans-serif; */
-  /*  color: inherit; */
   width: 190px;
   height: 35px;
 }
-
 .header__logo_mobile {
   display: none;
   background: url("../images/logo_m.svg") no-repeat;
   width: 36px;
   height: 35px;
 }
-
 .header__logo:hover {
   cursor: pointer;
 }
-
 .nav {
   display: flex;
   align-items: center;
@@ -65,20 +52,17 @@ h6 {
   text-decoration: none;
   color: inherit;
 }
-
 .nav__link_active:after {
   content: "";
   display: block;
   width: 100%;
   height: 3px;
   background-color: #0056ec;
-
   position: absolute;
   top: 110%;
   left: 0;
   z-index: 1;
 }
-
 .nav__link:after {
   content: "";
   display: block;
@@ -91,37 +75,28 @@ h6 {
   z-index: 1;
   transition: width 0.2s linear;
 }
-
 .nav__link:hover:after {
   width: 100%;
 }
-
 .nav__link:last-child {
   margin-right: 0;
 }
-
 .hamburger-menu {
   display: none;
 }
-
-/* Intro */
 .intro {
   width: 80%;
   margin: auto;
 }
-
 .intro__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* Content */
 .intro__content {
   padding: 73px 63% 100% 0;
   background: url("../images/Frame.svg") no-repeat top right;
 }
-
 .intro__title {
   font-size: 66px;
   font-weight: 700;
@@ -129,11 +104,9 @@ h6 {
   font-family: PT Serif;
   margin-bottom: 40px;
 }
-
 .title__mark {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%);
 }
-
 .intro__subtitle {
   font-family: Roboto;
   font-weight: normal;
@@ -141,7 +114,6 @@ h6 {
   line-height: 1.2;
   margin-bottom: 40px;
 }
-
 .btn {
   border: none;
   padding: 18px 30px 18px 21px;
@@ -157,67 +129,103 @@ h6 {
   text-decoration: none;
   transition: all 0.1s linear;
 }
-
 .btn:hover {
   box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
   transform: translate3d(-2px, -2px, 0);
 }
-
-/* Media */
-@media (max-width: 1740px) {
+@media (max-width: 1367px) {
+  .header {
+    margin-bottom: 80px;
+  }
+  .header__inner {
+    padding: 35px 76px;
+  }
   .intro__content {
-    background-size: 54%;
-    padding: 6% 63% 100% 0;
+    background-size: 48%;
+    background-position: 87% 0%;
+    padding: 2% 57% 100% 73px;
   }
   .intro__title {
     font-size: 50px;
   }
-}
-@media (max-width: 1430px) {
-  .intro__content {
-    background-size: 53%;
-    padding: 6% 63% 100% 0;
+  .intro__subtitle {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  .nav__link,
+  .nav__link_active {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .btn {
+    padding: 14px 31px 13px 18px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
-@media (max-width: 1325px) {
+@media (max-width: 1024px) {
+  .header {
+    width: 92%;
+    margin-bottom: 81px;
+  }
+  .intro {
+    width: 100%;
+    margin: auto;
+  }
+  .header__inner {
+    padding: 34px 0px;
+  }
   .intro__content {
     background-size: 50%;
-    padding: 6% 63% 100% 0;
+    background-position: 91% 1%;
+    padding: 2% 57% 100% 42px;
   }
   .intro__title {
-      font-size: 45px;
+    font-size: 50px;
+  }
+  .intro__subtitle {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+  .nav__link,
+  .nav__link_active {
+    margin: 0 13px;
+  }
+  .btn {
+    padding: 17px 27px 15px 13px;
+  }
 }
-
 @media (max-width: 768px) {
+  .header {
+    margin-bottom: 87px;
+  }
   .nav {
     display: none;
   }
-
   .header {
     margin-bottom: 28px;
   }
-
   .header__logo {
     display: none;
   }
-
   .header__logo_mobile {
     display: block;
   }
-
-  /* Burger menu */
-  /* скрываем чекбокс */
   .hamburger-menu {
     display: block;
   }
   #menu__toggle {
     opacity: 0;
   }
-
-  /* стилизуем кнопку */
   .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center; /* центрируем содержимое кнопки */
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 51px;
     right: 40px;
@@ -226,8 +234,6 @@ h6 {
     cursor: pointer;
     z-index: 1;
   }
-
-  /* добавляем "гамбургер" */
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
@@ -245,8 +251,6 @@ h6 {
     content: "";
     top: 8px;
   }
-
-  /* контейнер меню */
   .menu__box {
     display: block;
     position: fixed;
@@ -261,8 +265,6 @@ h6 {
     text-align: center;
     background-color: #fff;
   }
-
-  /* элементы меню */
   .menu__item {
     display: block;
     padding: 24px 24px;
