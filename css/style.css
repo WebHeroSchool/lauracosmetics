@@ -92,11 +92,11 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 133px;
 }
 .intro__content {
-  padding: 73px 66% 100% 0;
+  padding: 73px 63% 120px 0;
   background: url("../images/Frame.svg") no-repeat top right;
-  position: relative;
 }
 .intro__title {
   font-size: 66px;
@@ -114,7 +114,6 @@ h6 {
   font-size: 22px;
   line-height: 1.2;
   margin-bottom: 40px;
-  padding-right: 80px;
 }
 .btn {
   border: none;
@@ -137,13 +136,10 @@ h6 {
 }
 .slider {
   display: block;
-  background: url("../images/slaider.svg") no-repeat;
-  width: 32px;
+  margin: 0 auto;
+  width: 35px;
   height: 8px;
-  position: absolute;
-  bottom: 61%;
-  left: 49%;
-  z-index: 2;
+  background: url("../images/slaider.svg") no-repeat top right;
 }
 @media (max-width: 1640px) {
   .header {
@@ -152,10 +148,13 @@ h6 {
   .header__inner {
     padding: 35px 76px;
   }
+  .intro__inner {
+    margin-bottom: 48px;
+  }
   .intro__content {
     background-size: 48%;
     background-position: 87% 0%;
-    padding: 2% 57% 100% 73px;
+    padding: 2% 57% 100px 73px;
   }
   .intro__title {
     font-size: 50px;
@@ -166,7 +165,6 @@ h6 {
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 40px;
-    padding-right: 0px;
   }
   .nav__link,
   .nav__link_active {
@@ -177,10 +175,6 @@ h6 {
     padding: 14px 31px 13px 18px;
     font-size: 14px;
     line-height: 17px;
-  }
-  .slider {
-    bottom: 63.3%;
-    left: 48.5%;
   }
 }
 @media (max-width: 1270px) {
@@ -195,10 +189,13 @@ h6 {
   .header__inner {
     padding: 34px 0px;
   }
+  .intro__inner {
+    margin-bottom: 55px;
+  }
   .intro__content {
     background-size: 50%;
     background-position: 91% 1%;
-    padding: 2% 57% 100% 42px;
+    padding: 2% 57% 90px 42px;
   }
   .intro__title {
     font-size: 50px;
@@ -216,9 +213,6 @@ h6 {
   }
   .btn {
     padding: 17px 27px 15px 13px;
-  }
-  .slider {
-    bottom: 61.3%;
   }
 }
 @media (max-width: 770px) {
@@ -365,6 +359,9 @@ h6 {
     margin: 0 auto;
     padding: 14px 25px 13px 16px;
     font-size: 14px;
+  }
+  .slider {
+    display: none;
   }
 }
 @media (max-width: 380px) {
