@@ -1,6 +1,7 @@
 title {
   font-family: "Roboto", sans-serif;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -12,37 +13,45 @@ h5,
 h6 {
   margin: 0;
 }
+
 .intro__title {
   font-family: "PT Serif", sans-serif;
 }
+
 .header {
   width: 80%;
   margin: auto;
   margin-bottom: 131px;
 }
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   padding: 34px 0;
 }
+
 .header__logo {
   background: url("../images/logo.svg") no-repeat;
   width: 190px;
   height: 35px;
 }
+
 .header__logo_mobile {
   display: none;
   background: url("../images/logo_m.svg") no-repeat;
   width: 36px;
   height: 35px;
 }
+
 .header__logo:hover {
   cursor: pointer;
 }
+
 .nav {
   display: flex;
   align-items: center;
 }
+
 .nav__link,
 .nav__link_active {
   font-size: 18px;
@@ -52,6 +61,7 @@ h6 {
   text-decoration: none;
   color: inherit;
 }
+
 .nav__link_active:after {
   content: "";
   display: block;
@@ -63,6 +73,7 @@ h6 {
   left: 0;
   z-index: 1;
 }
+
 .nav__link:after {
   content: "";
   display: block;
@@ -75,29 +86,36 @@ h6 {
   z-index: 1;
   transition: width 0.2s linear;
 }
+
 .nav__link:hover:after {
   width: 100%;
 }
+
 .nav__link:last-child {
   margin-right: 0;
 }
+
 .hamburger-menu {
   display: none;
 }
+
 .intro {
   width: 80%;
   margin: auto;
 }
+
 .intro__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 133px;
+  margin-bottom: 151px;
 }
+
 .intro__content {
   padding: 73px 63% 120px 0;
   background: url("../images/Frame.svg") no-repeat top right;
 }
+
 .intro__title {
   font-size: 66px;
   font-weight: 700;
@@ -105,16 +123,20 @@ h6 {
   font-family: PT Serif;
   margin-bottom: 40px;
 }
+
 .title__mark {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 15%, #ecf3ff 15%);
 }
+
 .intro__subtitle {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 1.2;
   margin-bottom: 40px;
+  padding-right: 90px;
 }
+
 .btn {
   border: none;
   padding: 18px 30px 18px 21px;
@@ -130,10 +152,12 @@ h6 {
   text-decoration: none;
   transition: all 0.1s linear;
 }
+
 .btn:hover {
   box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
   transform: translate3d(-2px, -2px, 0);
 }
+
 .slider {
   display: block;
   margin: 0 auto;
@@ -141,6 +165,7 @@ h6 {
   height: 8px;
   background: url("../images/slaider.svg") no-repeat top right;
 }
+
 @media (max-width: 1640px) {
   .header {
     margin-bottom: 80px;
@@ -165,6 +190,7 @@ h6 {
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 40px;
+    padding-right: 0px;
   }
   .nav__link,
   .nav__link_active {
@@ -177,6 +203,7 @@ h6 {
     line-height: 17px;
   }
 }
+
 @media (max-width: 1270px) {
   .header {
     width: 92%;
@@ -215,6 +242,7 @@ h6 {
     padding: 17px 27px 15px 13px;
   }
 }
+
 @media (max-width: 770px) {
   .header {
     margin-bottom: 87px;
@@ -248,8 +276,8 @@ h6 {
     cursor: pointer;
     z-index: 1;
   }
-  .menu__btn > span,
   .menu__btn > span::before,
+  .menu__btn > span,
   .menu__btn > span::after {
     display: block;
     position: absolute;
@@ -287,6 +315,10 @@ h6 {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
   }
   .menu__item:hover {
     background-color: #cfd8dc;
@@ -326,12 +358,7 @@ h6 {
   .menu__btn > span::after {
     transition-duration: 0.25s;
   }
-  .menu__box {
-    transition-duration: 0.25s;
-  }
-  .menu__item {
-    transition-duration: 0.25s;
-  }
+
   .intro {
     width: 80%;
     margin: auto;
@@ -364,6 +391,7 @@ h6 {
     display: none;
   }
 }
+
 @media (max-width: 380px) {
   .header {
     margin-bottom: 11px;
