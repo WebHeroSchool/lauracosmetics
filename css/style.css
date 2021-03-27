@@ -21,14 +21,13 @@ h6 {
 
 .header {
   width: 80%;
-  margin: auto;
-  margin-bottom: 134px;
+  margin-bottom: 131px;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
-  padding: 32px 0;
+  padding: 34px 0;
 }
 
 .header__logo {
@@ -39,6 +38,13 @@ h6 {
 
 .hamburger-menu {
   display: none;
+}
+
+.header__logo_mobile {
+  display: none;
+  background: url("../images/logo_m.svg") no-repeat;
+  width: 36px;
+  height: 35px;
 }
 
 .header__logo:hover {
@@ -107,7 +113,11 @@ h6 {
 .intro__content {
   padding: 76px 63% 200px 0;
   background: url("../images/Frame.svg") no-repeat top right;
-  margin-bottom: 87px;
+  margin-bottom: 151px;
+}
+.intro__content {
+  padding: 73px 63% 120px 0;
+  background: url("../images/Frame.svg") no-repeat top right;
 }
 
 .intro__title {
@@ -123,11 +133,11 @@ h6 {
 }
 
 .intro__subtitle {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 1.2;
-  margin-bottom: 57px;
+  margin-bottom: 40px;
   padding-right: 90px;
 }
 
@@ -151,6 +161,7 @@ h6 {
   box-shadow: 0 0 10px rgba(37, 37, 37, 0.5);
   transform: translate3d(-2px, -2px, 0);
 }
+
 .slaider {
   display: flex;
   width: 32px;
@@ -219,8 +230,13 @@ h6 {
 }
 
 @media (max-width: 769px) {
-  .nav {
-    display: none;
+  .slider {
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    height: 8px;
+    background: url("../images/slaider.svg") no-repeat top right;
+    margin-bottom: 40px;
   }
   .header {
     width: 90%;
@@ -228,6 +244,14 @@ h6 {
   }
   .header__inner {
     padding: 17px 0 31px;
+
+    margin-bottom: 28px;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header__logo_mobile {
+    display: block;
   }
   .hamburger-menu {
     display: block;
@@ -256,6 +280,8 @@ h6 {
     position: fixed;
     top: 27px;
     right: 45px;
+    top: 51px;
+    right: 40px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -263,6 +289,8 @@ h6 {
   }
   .menu__btn > span,
   .menu__btn > span::before,
+  .menu__btn > span::before,
+  .menu__btn > span,
   .menu__btn > span::after {
     display: block;
     position: absolute;
@@ -314,27 +342,95 @@ h6 {
     padding: 75% 0 0;
     background-size: 75%;
     background-position: 50% 0%;
+    top: 15%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+  }
+  .menu__item {
+    display: block;
+    padding: 24px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .intro {
+    width: 80%;
+    margin: auto;
+  }
+  .intro__content {
+    text-align: center;
+    padding: 80% 100px 0;
+    background-size: 80%;
+    background-position: top center;
+    margin-bottom: 0;
   }
   .intro__title {
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
   .intro__subtitle {
     text-align: center;
     font-size: 16px;
     line-height: 19px;
     font-weight: 600;
-    margin-bottom: 46px;
     padding: 0 80px;
+    margin-bottom: 28px;
   }
   .btn {
     margin: 0 auto;
     padding: 14px 25px 13px 16px;
     font-size: 14px;
-  }
-  .slaider {
-    display: none;
   }
 }
 
